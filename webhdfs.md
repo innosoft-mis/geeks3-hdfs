@@ -1,5 +1,14 @@
 ```python
-# CRATE A FILE
+# List a Directory 
+
+url = "http://localhost:9870/webhdfs/v1/user/student/ncd_screen.csv?op=LISTSTATUS&user.name=student"
+r = requests.get(url)
+obj = json.loads(r.content)
+print(json.dumps(obj, indent=2))
+```
+
+```python
+# CREATE A FILE
 
 url = "http://localhost:9870/webhdfs/v1/user/student/ncd_screen.csv?op=CREATE&user.name=student&overwrite=true"
 r = requests.put(url, data=open('ncd_screen_001.csv', 'r').read())
