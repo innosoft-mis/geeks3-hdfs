@@ -17,11 +17,11 @@ start-yarn.sh
 hadoop fs -put chospital.csv
 ```
 
-## 2)	List file on HDFS, explain the difference result between -ls and -lsr
+## 2)	List file on HDFS
 
 ```
 hadoop fs –ls
-hadoop fs -lsr 
+hadoop fs -ls /user/student
 ```
 
 ## 3)	Create directory on HDFS, and move file into created directory.
