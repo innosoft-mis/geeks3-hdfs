@@ -8,6 +8,14 @@ print(json.dumps(obj, indent=2))
 ```
 
 ```python
+# Make a Directory
+
+url = "http://localhost:9870/webhdfs/v1/user/student/ncd_screen_data?op=MKDIRS&user.name=student"
+r = requests.put(url)
+r.status_code
+```
+
+```python
 # CREATE A FILE
 
 url = "http://localhost:9870/webhdfs/v1/user/student/ncd_screen.csv?op=CREATE&user.name=student&overwrite=true"
