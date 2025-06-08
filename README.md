@@ -20,7 +20,7 @@ hadoop fs -put chospital.csv
 ## 2)	List file on HDFS
 
 ```
-hadoop fs –ls
+hadoop fs -ls
 hadoop fs -ls /user/student
 ```
 
