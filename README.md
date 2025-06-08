@@ -1,4 +1,4 @@
-# Hands-on Lab 1: HDFS 
+# Hands-on Lab: HDFS 
 
 ## Objective:
 - Transfer IN/OUT files between local file-system and HDFS
